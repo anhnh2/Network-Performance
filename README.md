@@ -16,5 +16,16 @@ Viết script ns-2 mô phỏng topology như sau:
 ![image](/images/topology.png)  
 **Hình 1.** Topology mạng.
 
-Hình trên minh họa topology mạng sau khi chạy script TCL.
+Các hình dưới đây minh họa topology mạng sau khi chạy script TCL.
+
+![image](/images/topology1.png)
+
+![image](/images/topology2.png)
+
+Phân tích kết quả sau khi chạy kịch bản mô phỏng nói trên:
+1. Tính thông lượng trung bình của các kết nối (3 kết nối tcp, 1 kết nối udp) tính trong thời gian các kết nối hoạt động (có truyền số liệu của nguồn sinh lưu lượng).
+2. Độ trễ trung bình của tất cả các gói tin số liệu của các kết nối trên.
+3. Tính thông lượng và vẽ đồ thị của các kết nối tính từ khi nhận được gói tin đầu tiên đến thời điểm nhận được từng gói tin tiếp theo.
+4. Tính thời gian chờ (waiting time) trung bình của tất cả các gói tin (số liệu) của từng kết nối tại hàng đợi Q.
+
 
