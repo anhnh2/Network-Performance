@@ -1,7 +1,7 @@
 # Network-Performance
 Đánh giá hiệu năng mạng
 
-**Bài 1.** Simple Simulation Example. (_Tham khảo: [go](http://nile.wpi.edu/NS/simple_ns.html){:target="_blank" rel="noopener"}_)
+**Bài 1.** Simple Simulation Example. (_Tham khảo: [http://nile.wpi.edu/NS/simple_ns.html](http://nile.wpi.edu/NS/simple_ns.html){:target="_blank" rel="noopener"}_)
 (_[https://book.hacktricks.xyz/forensics/basic-forensic-methodology/memory-dump-analysis/volatility-examples](https://book.hacktricks.xyz/forensics/basic-forensic-methodology/memory-dump-analysis/volatility-examples){:target="_blank"}_ )
  
 **Bài 2.** Viết script ns-2 mô phỏng topology như sau:
