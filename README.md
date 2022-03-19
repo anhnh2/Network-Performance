@@ -1,7 +1,7 @@
 # Network-Performance
 Đánh giá hiệu năng mạng
 
-**Bài 1.** Simple Simulation Example (_Tham khảo: [http://nile.wpi.edu/NS/simple_ns.html](http://nile.wpi.edu/NS/simple_ns.html){:target="_blank"}_)
+**Bài 1.** Simple Simulation Example. (_[https://book.hacktricks.xyz/forensics/basic-forensic-methodology/memory-dump-analysis/volatility-examples](https://book.hacktricks.xyz/forensics/basic-forensic-methodology/memory-dump-analysis/volatility-examples){:target="_blank"}_ )
  
 **Bài 2.** Viết script ns-2 mô phỏng topology như sau:
 - Tổng số 9 nút mạng (node) thứ tự từ 0 đến 8 với các hướng như hình bên dưới;
