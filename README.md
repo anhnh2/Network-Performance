@@ -5,7 +5,7 @@
 
 **Bài 2.** Trace Analysis Example. (_Tham khảo: [http://nile.wpi.edu/NS/analysis.html](http://nile.wpi.edu/NS/analysis.html)_)
  
-**Bài 2.** Viết script ns-2 mô phỏng topology như sau:
+**Bài 3.** Viết script ns-2 mô phỏng topology như sau:
 - Tổng số 9 nút mạng (node) thứ tự từ 0 đến 8 với các hướng như hình bên dưới;
 - Các liên kết 0-3, 1-3, 2-3: 2Mbps, 5ms;
 - Các liên kết 3-4, 4-5: 1.5Mbps, 15ms;
