@@ -61,20 +61,14 @@ Trong đó:
 - `<flow id>` là id của kết nối cần tính thông lượng trung bình (thí dụ với các luồng tcp0:0, tcp1:1, tcp2:2, cbr:3) 
 - `<required node>` là node nhận lưu lượng cần tính thông lượng trung bình.
 
-Kết quả thu được có dạng tương tự như bên dưới, throughput có đơn vị là Kbps, avg  có đơn vị là giây (s):
+Kết quả thu được có dạng tương tự như bên dưới, throughput có đơn vị là Kbps:
 ```console
 fid = 0: sum = 743640 ; time = 10.258837 ; throughput = 72487.7488549628
 fid = 1: sum = 263160 ; time = 10.186517 ; throughput = 25834.149199378
 fid = 2: sum = 161240 ; time = 10.042091 ; throughput = 16056.4169354769
 fid = 3: sum = 682000 ; time = 5.02976 ; throughput = 135592.950757094
-fid = 0: avg=0.181468615921788
-fid = 1: avg=0.214076
-fid = 2: avg=0.223630897435897
-fid = 3: avg=0.214470928152493
 ```
-Ví dụ:
-- `fid = 0: sum = 743640 ; time = 10.258837 ; throughput = 72487.7488549628`, có nghĩa là kết nối tcp0 từ node s0 đến node s8, có thông lượng trung bình là 72487.7488549628 Kbps
-- `fid = 0: avg=0.181468615921788`, có nghĩa là kết nối tcp0 có độ trễ trung bình các gói tin là 0.181468615921788 s
+Ví dụ: `fid = 0: sum = 743640 ; time = 10.258837 ; throughput = 72487.7488549628`, có nghĩa là kết nối tcp0 từ node s0 đến node s8, có thông lượng trung bình là 72487.7488549628 Kbps
 
 3. Độ trễ trung bình của tất cả các gói tin số liệu của các kết nối trên. (_tham khảo file `avg_delay_during_sim_time.pl` bên dưới_).
 ~~~perl
@@ -122,6 +116,14 @@ $avg_delay = $delay / $num;
 print STDOUT "fid = $flow: avg=$avg_delay\n";
 exit 0;
 ~~~
+Kết quả thu được có dạng tương tự như bên dưới, avg  có đơn vị là giây (s):
+```console
+fid = 0: avg=0.181468615921788
+fid = 1: avg=0.214076
+fid = 2: avg=0.223630897435897
+fid = 3: avg=0.214470928152493
+```
+Ví dụ: `fid = 0: avg=0.181468615921788`, có nghĩa là kết nối tcp0 có độ trễ trung bình các gói tin là 0.181468615921788 s
 
 4. Tính thông lượng và vẽ đồ thị của các kết nối tính từ khi nhận được gói tin đầu tiên đến thời điểm nhận được từng gói tin tiếp theo.
 5. Tính thời gian chờ (waiting time) trung bình của tất cả các gói tin (số liệu) của từng kết nối tại hàng đợi Q.
