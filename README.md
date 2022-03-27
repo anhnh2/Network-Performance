@@ -125,7 +125,9 @@ fid = 3: avg=0.214470928152493
 ```
 Ví dụ: `fid = 0: avg=0.181468615921788`, có nghĩa là kết nối tcp0 có độ trễ trung bình các gói tin là 0.181468615921788 s
 
-4. Tính thông lượng và vẽ đồ thị của các kết nối tính từ khi nhận được gói tin đầu tiên đến thời điểm nhận được từng gói tin tiếp theo.
-5. Tính thời gian chờ (waiting time) trung bình của tất cả các gói tin (số liệu) của từng kết nối tại hàng đợi Q.
+4. Tính thông lượng và vẽ đồ thị của các kết nối tính từ khi nhận được gói tin đầu tiên đến thời điểm nhận được từng gói tin tiếp theo. Tham khảo kết quả như hình bên dưới, khi vẽ phải bổ sung đầy đủ thông tin như title, x, y,...
+![image](/images/throughput.png)
+
+6. Tính thời gian chờ (waiting time) trung bình của tất cả các gói tin (số liệu) của từng kết nối tại hàng đợi Q.
 
 
