@@ -131,3 +131,9 @@ Ví dụ: `fid = 0: avg=0.181468615921788`, có nghĩa là kết nối tcp0 có 
 6. Tính thời gian chờ (waiting time) trung bình của tất cả các gói tin (số liệu) của từng kết nối tại hàng đợi Q.
 
 
+**Bài 4.** Cài đặt thêm module trong ns-2:
+1. Tải về mã nguồn ns-2: _http://sourceforge.net/projects/nsnam/files/allinone/ns-allinone-2.35/ns-allinone-2.35.tar.gz/download_
+2. Giải nén và chuyển vào thư mục `ns-2.35` rồi dịch bằng cách chạy lần lượt các lệnh: `./configure`, `make clean`, `make depend` và `make`
+3. Tải về module 802.11e: _https://github.com/anhnh2/IEEE-802.11-Simulation-Using-NS-2/raw/main/EDCA_ns-2_28-v1-0-2.tgz_
+4. Giải nén và làm theo hướng dẫn trong file `README`
+5. Kiểm tra việc dịch lại ns-2 với module mới bằng cách chạy file kịch bản `multi_udpflows.tcl` (có sẵn trong file `EDCA_ns-2_28-v1-0-2.tgz`)
